@@ -8,7 +8,7 @@ console.log("\n");
 
 
 // Character classes
-let regex = /\war/;     // \w word character -->  _ or alphabet or numbers
+let regex = /\war/;     // \w word character -->  _(underscore) or alphabet or numbers
 regex = /\w+d1r/;       // \w+ means one or more word characters
 regex = /\Wbhai/;       // \W  means Non word character
 regex = /\W+bhai/;      // \W+ means more than one Non word character

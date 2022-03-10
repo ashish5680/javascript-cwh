@@ -14,7 +14,7 @@ console.log("\n");
 
 // ase forward slashes ke bich mai kuch likh dege too voo regular expression literal ban jega mai kuch matching karvauga kuch functions ka istamal karke
 let reg = /harry/;    //This is a regular expression literal in JS
-// reg = /harry/g; // g means global    -->    is se ye hoga ki ahar hum puri string mai search kar re hai too jab dusari bar check krege too voo dusara btayega
+// reg = /harry/g; // g means global flag   -->    is se ye hoga ki ahar hum puri string mai search kar re hai too jab dusari bar check krege too voo dusara btayega
 // reg = /harry/i; // i means case insensitive       -->   isme agar capital hoo tab bhi match hooo jega small hai tab bhi match hoo jega  agar kuch HarRy asa kuch hai tab bhi match hoo jega
 // ye g ya i joo hai voo flag hai 
 
