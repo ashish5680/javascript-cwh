@@ -15,7 +15,7 @@ class Library {
 
     constructor(bookList){
         this.bookList = bookList;
-        this.issuedBooks = {};     // issuedBooks ko object bana raha hu idhar aur usse abhi khali rakh raha hu
+        this.issuedBooks = {};     // issuedBooks ko object bana raha hu idhar aur usse abhi khali rakh raha hu.  whose key is book name and value is user name
     }
 
     getBookList(){
@@ -25,6 +25,9 @@ class Library {
     }
 
     issueBook(bookname, user){
+
+        console.log(this.issuedBooks[bookname]);
+
         if (this.issuedBooks[bookname] == undefined){
             this.issuedBooks[bookname] =  user;
         }

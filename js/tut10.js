@@ -211,6 +211,11 @@ console.log('\n');
 // Scope of Variables
 
 
+console.log("Scope of Variable")
+console.log('\n');
+
+
+
 // Part 1
 var i = 234;
 console.log(i);

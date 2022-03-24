@@ -1,3 +1,5 @@
+console.log('tut4');
+
 // Primitive data types
 
 // String
@@ -42,7 +44,7 @@ console.log('\n');
 // Reference Data Types
 
 // Arrays
-let myarr = [1, 2, 3, 4, false, "string"];
+let myarr = [1, 2, 3, 4, false, "string"];                    // array ka datatype bhi object hi hota hai
 console.log("Data type is " + (typeof myarr));
 
 
@@ -67,7 +69,7 @@ console.log( typeof findName);
 console.log('\n');
 
 
-let date = new Date();
+let date = new Date();             // iska datatype bhi object hi hota hai
 console.log(date);
 console.log( typeof date);
 

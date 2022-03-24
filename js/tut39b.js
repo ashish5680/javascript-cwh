@@ -64,6 +64,8 @@ let newStudent = { name: "Sunny", subject: "Python" };
 
 
 
+
+
 enrollStudent(newStudent)
     .then(function() {
         getStudents();
@@ -72,7 +74,9 @@ enrollStudent(newStudent)
         console.log("Some error occured");
     });
 
+
 // or we can write it in this type also
+
 
 // enrollStudent(newStudent)
 //     .then(getStudents)

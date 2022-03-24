@@ -1,5 +1,5 @@
 console.log("We are at tutorial 9");
-
+// For , While and Do-While Loops
 
 console.log('\n');
 
@@ -12,11 +12,14 @@ console.log('\n');
 
 
 
+
+
 // let a =34;
 // a +=1;
 // a++;
+// console.log(++a);
+// console.log(a++);
 // console.log(a);
-
 
 
 

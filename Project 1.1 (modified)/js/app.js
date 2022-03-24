@@ -27,7 +27,10 @@ addBtn.addEventListener("click", function(e) {
     text: addTxt.value
   }
 
+  // notesObj.push(addTxt.value);
+
   notesObj.push(myObj);
+
   localStorage.setItem("notes", JSON.stringify(notesObj));
   addTxt.value = "";                 // local storage mai set karne ke baad iski value ko blank kar dena hai
   addTitle.value = "";

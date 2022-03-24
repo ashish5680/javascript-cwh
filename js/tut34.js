@@ -35,7 +35,7 @@ console.log("This is tutorial 34");
 
 // Asynchronous Example
 
-// isme for loop ko function ke andr daal diya too ye block ni kar raha ,
+// isme for loop ko setTimeout function ke andr daal diya too ye block ni kar raha ,
 // iske mane ye kiya hai ki for loop ko asynchronous code bana diya 
 // too isme 'done printing asynchronous' phle likh ke aa jega 
 

@@ -11,7 +11,7 @@ console.log("\n");
 
 
 
-// Hum primitive dattypes se koi bhi new chiz nahi bana sakte
+// Hum primitive datatypes se koi bhi new chiz nahi bana sakte
 // iska ye solution hai ki hum joo har bar sybmol banate hai voo unique hota hai too hum uske andr object keys daal sakte hai
 
 
@@ -106,5 +106,5 @@ for(key in myObj){
 console.log("\n");
 
 
-
+// isme bhi symbols ignore hoo jege
 console.log(JSON.stringify(myObj));     // it convert object to string

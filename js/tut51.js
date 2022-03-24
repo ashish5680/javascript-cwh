@@ -4,11 +4,11 @@ console.log('The file is tutorial 51');
 function fruitsIterator(values) {
     let nextIndex = 0;
     // we will return an object
-    return {
+    return {                                 // ye function ki return value hai
         next: function () {
             if (nextIndex < values.length) {
                 // We will return below object
-                return {
+                return {                          // ye next function ka return hai
                     value: values[nextIndex++],
                     done: false
                 }

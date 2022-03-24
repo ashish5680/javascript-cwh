@@ -21,6 +21,14 @@ let content = document.getElementById("content");
 
 
 
+
+
+
+
+
+
+// // Part 1:
+
 // function getData(){
 
 //     console.log("Started getData");
@@ -44,6 +52,17 @@ let content = document.getElementById("content");
 
 
 
+
+///////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+// Part 2:
 
 
 // Note: fetch uses get request by default
@@ -72,6 +91,12 @@ function getData(){
 
 
 
+////////////////////////////////////////////////////////
+
+
+
+
+
 
 
 // console.log("Before getData");
@@ -85,13 +110,52 @@ function getData(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
 
-
 console.log("\n");
+console.log("\n");
+
+
+
+
+
+
+
+
 
 
 
@@ -116,7 +180,7 @@ function postData(){
 
 
 
-    // fetch API url ke sath parameters bhi leti hai
+    // post mai fetch API url ke sath parameters bhi leti hai
     fetch(url, params)                // fetch is asynchronous 
         .then((response) => {
             return response.json();    // agar mai chahata hu ki ye mujhay object ki form mai dikhaye too use response.json   // json use karte hai too parse kar deta hai
@@ -128,7 +192,11 @@ function postData(){
 }
 
 
+
+
+console.log("Before POST data");
 postData();
+console.log("After POST data");
 
 
 

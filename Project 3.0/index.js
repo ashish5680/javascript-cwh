@@ -13,7 +13,7 @@ let apiKey = '6c6769dc180541dc9964efb093fa10b3'
 // Grab the news container
 let newsAccordion = document.getElementById('newsAccordion');
 
-
+      
 // Create an ajax get request
 const xhr = new XMLHttpRequest();
 

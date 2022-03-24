@@ -92,6 +92,13 @@ console.log("\n");
 
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 
 //  **********For of loop***********      // we use for of loop if there is array or string because those are iterable
 console.log("*****************For of loop starts here**************");

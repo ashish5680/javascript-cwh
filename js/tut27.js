@@ -22,7 +22,7 @@ console.log(car.run());
 
 
 
-
+// Note : Object ek unique entity hoti hai jisme properties and Methods hote hai
 
 
 
@@ -69,8 +69,8 @@ function GeneralCar(givenName, givenSpeed) {
         `This car is slower by ${200 - this.topSpeed} Km/H than Mercedes`
       );
     };
-
-  }
+  
+}
 
 
 

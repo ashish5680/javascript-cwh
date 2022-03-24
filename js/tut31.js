@@ -38,7 +38,7 @@ class Employee {
 class Programmer extends Employee{
 
     constructor(givenName, givenExperience, givenDivision, language, github){
-        super(givenName, givenExperience, givenDivision);
+        super(givenName, givenExperience, givenDivision);        // iska matlab iski parent class ka constructor call hoga
         this.language = language;
         this.github = github;
     }
@@ -63,6 +63,10 @@ class Programmer extends Employee{
 
 
 
+// Note: Constructor voo function hota hai jab bhi object create hota hai 
+
+
+
 
 
 let harry = new Employee("Harry", 56, "Division");
@@ -80,5 +84,10 @@ console.log(rohan);
 console.log(rohan.favourateLanguage());
 console.log(Programmer.multiply(5, 7));
 
+
+console.log('\n');
+
+console.log(Programmer.add(5, 8));
+console.log(rohan.slogan());
 
 

@@ -10,6 +10,11 @@ console.log("\n");
 // Pretend this is coming from a server as response
 let a = "Ashish Bhai";
 a = undefined;
+
+
+
+
+
 if(a != undefined){
     throw new Error('This is not undefined');     // ase hum custom error throw kar saktee hai  yahi pe aage ka code ruk jaayega
 }
@@ -26,6 +31,9 @@ else{
 
 
 console.log("\n");
+console.log("\n");
+console.log("\n");
+console.log("\n");
 
 
 
@@ -39,13 +47,13 @@ console.log("\n");
 try {
     // null.console
     console.log("We are inside try block");
-    functionHarry();
+    functionHarry();             // it will give reference error
 
 } 
 catch(error) {
     console.log(error)
     console.log("Are you okay?");
-    console.log(error.name);
+    console.log(error.name);     // ye btayega ki konsi trah ka error hai
     console.log(error.message);
     
 } 

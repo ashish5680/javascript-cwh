@@ -32,21 +32,33 @@ const students = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 // // Part 1
 
 
-// // yaha setTimeOut isiliye use kiya kuki jase hi hum server pe request bhejege too voo kuch time legi ab let say voo 8 second legi too humne apne setTimeOut mai 8 sec. kaa tym dedege taaki voo 8 sec. baad chale
+// // yaha setTimeOut isiliye use kiya kuki jase hi hum iss function pe call krege too server pe request bhejege too voo kuch time legi ab let say voo 8 second legi too humne apne setTimeOut mai 8 sec. kaa tym dedege taaki voo 8 sec. baad chale
 
 // function enrollStudent(student){
 //     // ab ye kaam asynchronously hoga
 //     setTimeout(function() {           // setTimeout kheta hai ki aap jo kar rahe hai vo karte rahe mai iske andr kaa saman luga background mai 8 second baad kuki iske end mai 8 sec. likha hai
 //         students.push(student);
 //         console.log("Student has been enrolled");
-//         // callback();
+
 //     }, 8000);   // 1 second baad saman luga, matlab abhi se 1 sec. baad ye function chalega
 // }
 
-
+ 
 
 
 // function getStudents(){
@@ -64,14 +76,10 @@ const students = [
 
 
 // let newStudent = {name:"Sunny", subject:"Python"}
-// enrollStudent(newStudent, getStudents);
+
+
+// enrollStudent(newStudent);
 // getStudents();
-
-
-
-
-
-
 
 
 
@@ -165,6 +173,7 @@ function getStudents(){
 
 let newStudent = {name:"Sunny", subject:"Python"}
 enrollStudent(newStudent, getStudents);
+
 getStudents();
 
 

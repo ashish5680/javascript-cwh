@@ -3,7 +3,7 @@ console.log("Welcome to notes app. This is app.js");
 
 console.log('\n');
 
-showNotes();
+showNotes();       // page reload hone pe saare notes dikh jege
 
 
 
@@ -22,7 +22,7 @@ addBtn.addEventListener("click", function(e) {
   }
 
   notesObj.push(addTxt.value);
-  localStorage.setItem("notes", JSON.stringify(notesObj));
+  localStorage.setItem("notes", JSON.stringify(notesObj));      // string mai isiliye convert kiya kuki local storage mai string mai hi set karna hota hai
   addTxt.value = "";                 // local storage mai set karne ke baad iski value ko blank kar dena hai
   
   console.log(notesObj);
@@ -49,7 +49,7 @@ function showNotes() {
   if (notes == null) {
     notesObj = [];
   } else {
-    notesObj = JSON.parse(notes);
+    notesObj = JSON.parse(notes);          // ye humne notes ko array mai retrieve kar liya
   }
 
   let html = "";
@@ -60,10 +60,14 @@ function showNotes() {
                     <div class="card-body">
                         <h5 class="card-title">Note ${index + 1}</h5>
                         <p class="card-text"> ${element}</p>
-                        <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
+                        <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
                     </div>
                 </div>`;
   });
+
+
+  // note: ye button mai onclick ek attribute hota hai jisne function ko call kiya hua hai
+
 
   let notesElm = document.getElementById("notes");
 
@@ -130,6 +134,7 @@ let search = document.getElementById('searchTxt');
 search.addEventListener("input", function(){
 
     let inputVal = search.value.toLowerCase();
+
     // console.log('Input event fired!', inputVal);
 
     let noteCards = document.getElementsByClassName('noteCard');
@@ -140,10 +145,10 @@ search.addEventListener("input", function(){
         let cardTxt = element.getElementsByTagName("p")[0].innerText;
         
         if(cardTxt.includes(inputVal)){
-            element.style.display = "block";
+            element.style.display = "block";          // it means ye show hoga 
         }
         else{
-            element.style.display = "none";
+            element.style.display = "none";         // it means ye show nahi hoga
         }
         // console.log(cardTxt);
     });

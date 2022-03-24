@@ -2,6 +2,9 @@ console.log("This is Tut 43");
 // Async/ Await in JavaScript
 
 
+
+
+
 console.log("\n");
 
 
@@ -81,7 +84,8 @@ async function harry(){         // async ek promise ko return karta hai to hum a
 console.log("Before calling harry")
 let a = harry();
 console.log("After calling harry")
-console.log(a);   // ye a ek promise hai 
+
+console.log("This is a Promise " , a);   // ye a ek promise hai 
 
 a.then(data => console.log(data))
 

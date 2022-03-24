@@ -28,7 +28,13 @@ const proto = {
 // console.log(harry);
 
 
+
+
+
 // Alternative syntax
+
+
+
 
 
 // This also creates harry object
@@ -103,11 +109,13 @@ function Programmer(name, salary, experience, language) {
     this.language = language;
 }
 
-// Inherit the prototype
+// Inherit the prototype also
 Programmer.prototype = Object.create(Employee.prototype);
 
 // Manually set the constructor
 Programmer.prototype.constructor = Programmer;
+
+
 
 
 

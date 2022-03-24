@@ -1,4 +1,6 @@
 console.log('We are in tut7.js and lets discuss about arrays');
+// Arrays and Objects in JS
+
 
 console.log('\n');
 
@@ -63,7 +65,7 @@ marks.shift()       // ye array ke front de delete kr dega
 // marks.reverse();
 
 
-let marks2 = [1, 2,3, 7];
+let marks2 = [1, 2, 3, 7];
 marks = marks.concat(marks2);
 
 console.log(marks);
@@ -82,7 +84,7 @@ console.log('\n');
 
 
 
-// Objects
+// Objects  -->  object mai key value pair hoti hai joo value hoti hai usme hum strings, numbers, arrays kuch bhi daal sakte hai
 
 let myobj = {
     'first name': 'harry', 

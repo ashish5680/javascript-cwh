@@ -45,7 +45,7 @@ name.addEventListener('blur', ()=>{
 
     if(regex.test(str)){
         console.log('Your name is valid');
-        name.classList.remove('is-invalid');
+        name.classList.remove('is-invalid');          // Note: ye is-invalid bootstrap ki form validation ki class hai
         validUser = true;
     }
     else{

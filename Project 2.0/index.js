@@ -18,10 +18,19 @@ function Book(name, author, type) {
     this.type = type;
 }
 
+
+
+
+
 // Display Constructor
 function Display() {
 
 }
+
+
+
+
+
 
 
 
@@ -37,11 +46,17 @@ Display.prototype.add = function (book) {
     tableBody.innerHTML += uiString;
 }
 
+
+
+
 // Implement the clear function
 Display.prototype.clear = function () {
     let libraryForm = document.getElementById('libraryForm');
     libraryForm.reset();
 }
+
+
+
 
 // Implement the validate function
 Display.prototype.validate = function (book) {
@@ -52,6 +67,10 @@ Display.prototype.validate = function (book) {
         return true;
     }
 }
+
+
+
+
 
 Display.prototype.show = function (type, displayMessage) {
     let message = document.getElementById('message');
@@ -76,6 +95,11 @@ Display.prototype.show = function (type, displayMessage) {
 
 
 
+
+
+
+
+
 // Add submit event listener to libraryForm
 let libraryForm = document.getElementById('libraryForm');
 
@@ -84,7 +108,7 @@ libraryForm.addEventListener('submit', libraryFormSubmit);
 
 function libraryFormSubmit(e) {
 
-    console.log('YOu have submitted library form');
+    console.log('You have submitted library form');
 
     let name = document.getElementById('bookName').value;
     let author = document.getElementById('author').value;
@@ -94,7 +118,7 @@ function libraryFormSubmit(e) {
     let programming = document.getElementById('programming');
     let cooking = document.getElementById('cooking');
 
-    if (fiction.checked) {
+    if (fiction.checked) {           // ye .checked btata hai ki check hai ki nahi
         type = fiction.value;
     }
     else if (programming.checked) {
@@ -125,5 +149,5 @@ function libraryFormSubmit(e) {
         display.show('danger', 'Sorry you cannot add this book');
     }
 
-    e.preventDefault();
+    e.preventDefault();          // iss se page reload ni hoga
 }

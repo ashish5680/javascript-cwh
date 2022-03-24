@@ -11,6 +11,10 @@ whenever someone clicks on the div, it should be converted into an editable item
 */
 
 
+
+
+
+
 // Create a new Element
 let divElem = document.createElement('div');
 
@@ -48,11 +52,17 @@ let first = document.getElementById('myfirst');
 
 
 
+
+
+
+
 // Insert the element before element with id first
 container.insertBefore(divElem, first);
 
 
 console.log(divElem, container, first);
+
+
 
 
 
@@ -64,7 +74,7 @@ divElem.addEventListener('click', function () {
     // ye sirf tab chalega agar isse nahi listen kiya hai too
     let noTextAreas = document.getElementsByClassName('textarea').length;
     if(noTextAreas ==0){     // if we click first time then its length is zero
-    let html = elem.innerHTML;
+    let html = elem.innerHTML;        // iss divElem ki innerHTML copy hooo jegi html mai 
     divElem.innerHTML = ` <textarea class="textarea form-control" id="textarea" rows="3"> ${html}</textarea>`;
     }
 

@@ -35,7 +35,7 @@ function setAlarm(e) {
     now = new Date();
 
 
-    let timeToAlarm = alarmDate - now;
+    let timeToAlarm = alarmDate - now;                 // is se miliseconds timeToAlarm mai store hoo jega
     console.log(timeToAlarm);
 
     if(timeToAlarm >= 0){
